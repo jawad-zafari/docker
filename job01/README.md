@@ -36,6 +36,6 @@ pour supprimer :
 -----------------------------------------------------------------
 # Correction
 Dans la commande (docker pull),
-## Correction = docker version
+## Correction = docker pull docker/welcome-to-docker
 -------------------------------------------------------------------
 
