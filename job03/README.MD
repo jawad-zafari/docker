@@ -53,6 +53,11 @@
       ![docker rm](<images/docker rm.png>)
       ![docker rm](<images/docker rm-2.png>)
       ----------------------------------------------------
-
+       ## Supprimer l'image
+       docker rmi pengbai/docker-supermario
+       ![docker rmi](<images/docker rmi.png>)
+        Docker Desktop → Images → Delete
+       ![docker rmi](<images/docker rmi-2.png>)
+       ---------------------------------------------------
          
       
