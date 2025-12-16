@@ -1,7 +1,24 @@
 ## Job 02
 ## L'objectif :
  Découvrir Docker de manière pratique en construisant, exécutant et modifiant une image Docker à partir d'un projet existant.(welcome-to-docker)
-
+ ------------------------------------------
+## 📂 Structure du projet
+welcome-to-docker/
+│
+├── Dockerfile
+├── package.json
+├── package-lock.json
+├── src/
+├── public/
+├── images/
+│   ├── 01-clone-project.png
+│   ├── 02-docker-build.png
+│   ├── 03-docker-run.png
+│   ├── 04-container-running.png
+│   ├── 05-code-modification.png
+│   └── 06-dockerhub-push.png
+└── README.md
+----------------------------------------------------------------
 # Cloner le projet et ouvrir avec vscode;
 ![clone](<images/git clone.png>)
 -----------------------------------------------------------------------
@@ -38,67 +55,58 @@ CMD [ "serve", "-s", "build" ]   ➜   docker run ...
 ---------------------------------------------------------------------
 # Exécution d'un conteneur
   docker run -d -p 3000:3000 --name welcome-container welcome-docker-job02
-  
+  ![run](<images/docker run.png>)
+
+  vérifier de conteneurs = docker ps
+  ![docker ps](<images/docker ps.png>)
+
+  Afficher le résultat dans le navigateur :
+  ![afficher](images/resultat.png)
 ---------------------------------------------------------------------
 # Modification du code
+  ![Modification](images/modification.png)
+---------------------------------------------------------------------
 # Reconstruction et publication de l'image
+Comme Docker ne détecte pas automatiquement les modifications, il faut :
+  docker stop welcome-container
+  ![docker stop](<images/docker stop welcome-container.png>)
+   
+   docker rm welcome-container
+    ![docker rm](<images/docker rm welcome-container.png>)
 
+    docker build -t welcome-docker-job02 .
+    ![rebuild](<images/docker rebuild.png>)
 
+    docker run -d -p 3000:3000 --name welcome-container welcome-docker-job02
+    ![run-2](<images/docker run-2.png>)
 
+    Afficher les modifications dans le navigateur
+    ![affichage le changement](<images/affichage le changement.png>)
+-----------------------------------------------------------------------
+## Publier sur Docker Hub
+   docker login
+   ![login](<images/docker login.png>)
 
------------------------------------------------
+  docker tag welcome-docker-job02 username/welcome-docker-job02
+  ![docker tag](<images/docker tag.png>)
+  ![docker tag-2](<images/docker tag-2.png>)
 
-------------------------------------------------------
-
-----------------------------------------------------
-
-------------------------------------------------
------------------------------------------------
---------------------------------------------
-docker build -t welcome-docker-job02 .
--------------------------------------------------
-Vérification de l'image créée = docker images
-![alt text](<docker images.png>)
---------------------------------------
-Exécution du conteneur
-docker run -d -p 3000:3000 --name welcome-container welcome-docker-job02
------------------------------
-verifier des conteneurs = docker ps
--------------------------------------------
-Afficher le résultat Dans le navigateur : http://localhost:3000
---------------------------------------------------------------------
-# Docker Job-02 – Welcome to Docker Part 2
-
-## Step 1 – Clone Project
-![clone](images/01-clone-project.png)
-
-## Step 2 – Dockerfile Analysis
-![dockerfile](images/02-dockerfile.png)
-
-## Step 3 – Build Image
-![build](images/03-docker-build.png)
-
-## Step 4 – Run Container
-![run](images/04-docker-run.png)
-
-## Step 5 – Code Modification
-![code](images/05-code-change.png)
------------------------------------------------------------------
+  docker push username/welcome-docker-job02
+  ![push](<images/dock push-2.png>)
+   
+   Recevoir des images d'autres personnes
+   docker pull personne/welcome-docker-job02
+-----------------------------------------------------------------------
 ### Problème rencontré
 
 Lors du lancement du conteneur, une erreur est apparue indiquant que le nom du conteneur était déjà utilisé.
 
 ### Solution appliquée
-
 Le conteneur existant a été arrêté puis supprimé avant de relancer un nouveau conteneur avec le même nom.
-
-```bash
 docker stop welcome-container
 docker rm welcome-container
 docker run -d -p 3000:3000 --name welcome-container welcome-docker-job02
 ------------------------------------------------------------------------------------
-docker login
-docker tag welcome-docker-job02 jzafari100/welcome-docker-job02
 
 
 
