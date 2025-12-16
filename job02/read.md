@@ -61,7 +61,7 @@ CMD [ "serve", "-s", "build" ]   ➜   docker run ...
   ![docker ps](<images/docker ps.png>)
 
   Afficher le résultat dans le navigateur :
-  ![afficher](images/resultat.png)
+ ![resultat](<images/affichage le changement.png>)
 ---------------------------------------------------------------------
 # Modification du code
   ![Modification](images/modification.png)
