@@ -32,4 +32,11 @@
       http://localhost:8600
       http://localhost:8700
       --------------------------------------------------
-
+      Exécution du deuxième conteneur
+      docker run -d -p 8800:8080 --name mario2 pengbai/docker-supermario
+      ![docker run](<images/docker run-2.png>)
+      affichage
+      ![affichage](images/affichage-3.png)
+      --------------------------------------------------
+      
+      
