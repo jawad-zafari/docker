@@ -15,8 +15,7 @@
    ## Vérification du téléchargement :
    docker images
     ![docker images](<images/docker images.png>)
-   -------------------------------------------------
-    ## Exécution du conteneur Super Mario
+    Exécution du conteneur Super Mario
     docker run -d -p 8600:8080 --name mario1 pengbai/supermario
     ![docker run](<images/docker run.png>) 
      Exécuter un conteneur depuis Docker Desktop
