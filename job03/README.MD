@@ -46,6 +46,13 @@
       ![docker stop](<images/docker stop.png>)
       ![docker stop](<images/docker stop-2.png>)
       ---------------------------------------------------
-      
+      ## Supprimer le conteneur
+      docker rm mario1
+      docker rm mario2
+      Docker Desktop → Containers → Delete
+      ![docker rm](<images/docker rm.png>)
+      ![docker rm](<images/docker rm-2.png>)
+      ----------------------------------------------------
+
          
       
