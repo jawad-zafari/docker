@@ -23,6 +23,8 @@
      ![docker run](<images/docker run-desk.png>) 
      Host Port: 8700 - Container Port: 8080
     -------------------------------------------------
-    
-      
-     
+     verifier des conteneurs Docker
+     docker ps
+      ![docker ps](<images/docker ps.png>)
+      ![docker ps](<images/docker ps-2.png>)
+     --------------------------------------------------
