@@ -38,5 +38,14 @@
       affichage
       ![affichage](images/affichage-3.png)
       --------------------------------------------------
+       ## Arrêter le conteneur
+       Trouver ID de conteneur
+      1- docker ps     2- Docker Desktop → Containers
+      docker stop mario1
+      docker stop <CONTAINER_ID>
+      ![docker stop](<images/docker stop.png>)
+      ![docker stop](<images/docker stop-2.png>)
+      ---------------------------------------------------
       
+         
       
