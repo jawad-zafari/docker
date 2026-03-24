@@ -18,6 +18,16 @@ Exposition du port 80.
 ![build](images/dockerbuild-01.png)
 
 ![build](images/dockerbuild-02.png)
+-------------------------------------------
+4. Lancement du conteneur (Run)
+
+Le conteneur a été lancé et exposé sur le port 8080 de la machine locale:
+
+docker run -d -p 8080:80 --name my-running-app my-php-app
+
+![docker run](images/dockerrun.png) 
+
+![navgator-port 8080](images/port8080.png)
 
 
 
