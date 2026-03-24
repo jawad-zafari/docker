@@ -28,6 +28,12 @@ docker run -d -p 8080:80 --name my-running-app my-php-app
 ![docker run](images/dockerrun.png) 
 
 ![navgator-port 8080](images/port8080.png)
+----------------------------------------------
+5. Arrêt du conteneur (Stop)
+
+ docker stop my-running-app
+
+ ![Docker-stop](images/docker-stop.png)
 
 
 
