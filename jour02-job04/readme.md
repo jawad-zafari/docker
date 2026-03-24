@@ -6,7 +6,9 @@ le fichier index.php avec la commande suivante pour afficher les informations du
 2. Configuration du Dockerfile
 Un fichier Dockerfile a été rédigé pour générer un environnement Apache/PHP avec les spécifications suivantes:
 Utilisation de l'image officielle php:8.2-apache.
+
 Copie du fichier index.php vers le répertoire /var/www/html/.
+
 Exposition du port 80.
 
 ![dockerfile](images/dockerfile.png)
