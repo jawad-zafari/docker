@@ -13,4 +13,11 @@ Exposition du port 80.
 
 ![dockerfile](images/dockerfile.png)
 -------------------------------------------
+3. Création de l'image (Build)
+
+![build](images/dockerbuild-01.png)
+
+![build](images/dockerbuild-02.png)
+
+
 
