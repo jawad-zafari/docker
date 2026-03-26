@@ -78,14 +78,16 @@ let currentPlayer = 'X';
 let gameActive = true;
 const statusDisplay = document.querySelector('.status');
 const cells = document.querySelectorAll('td');
+
 async function saveResults(winner) {
-const response = await fetch('/save', {
+const response = await fetch('/save.php', {
 method: 'POST',
 headers: { 'Content-Type': 'application/json' },
 body: JSON.stringify({ winner }),
 });
 return response.ok;
 }
+
 function makeMove(cell) {
 if (!gameActive || cell.textContent !== '') return;
 // Ajouter le symbole du joueur actuel
@@ -96,7 +98,6 @@ if (checkWin()) {
 statusDisplay.textContent = `Le joueur ${currentPlayer} a gagné !`;
 gameActive = false;
 saveResults(currentPlayer);
-_10
 return;
 }
 // Vérifier si c'est un match nul
@@ -110,6 +111,7 @@ return;
 currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
 statusDisplay.innerHTML = `C'est au tour de <span id="currentPlayer">${currentPlayer}</span>.`;
 }
+
 function checkWin() {
 const winningCombinations = [
 [0, 1, 2], [3, 4, 5], [6, 7, 8], // Lignes
@@ -120,9 +122,9 @@ return winningCombinations.some(combination => {
 return combination.every(index => {
 return cells[index].textContent === currentPlayer;
 });
-_11
 });
 }
+
 function resetGame() {
 currentPlayer = 'X';
 gameActive = true;
