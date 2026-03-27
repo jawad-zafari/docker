@@ -58,3 +58,11 @@ docker exec my-game cat /var/www/html/results.json
 ### La présence des données a également été vérifiée via l'interface de Docker Desktop dans la section Volumes.
 
 ![result-desktop](images/docker-desktop-volume.png)
+
+### 6. Arrêt du Conteneur
+
+Enfin, le conteneur a été arrêté proprement.
+```bash
+docker stop my-game
+```
+![stop](images/stop.png)
