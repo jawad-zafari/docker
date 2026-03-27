@@ -30,3 +30,13 @@ docker volume ls
 
 ````
 ![docker-volume](images/docker-volume.png)
+
+
+### 3. Construction de l'image (Build)
+
+L'image Docker a été construite avec la commande suivante:
+
+```bash
+docker build -t tic-tac-toe-app .
+````
+![docker-buuild](images/docker-build.png)
