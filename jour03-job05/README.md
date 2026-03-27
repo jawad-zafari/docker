@@ -6,8 +6,11 @@ L'objectif de ce projet est de créer une image Docker et un volume pour héberg
 
 ## Fichiers du Projet
 `index.html` : L'interface et la logique du jeu.
+
 `save.php` : Le script serveur pour enregistrer les données.
+
 `results.json` : Le fichier de base de données (initialisé vide `[]`).
+
 `Dockerfile` : Le fichier de configuration pour construire l'image.
 
 ## Étapes de Réalisation et Commandes
