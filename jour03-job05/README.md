@@ -16,4 +16,11 @@ L'objectif de ce projet est de créer une image Docker et un volume pour héberg
 Pour respecter l'utilisation d'un serveur web tout en supportant l'exécution du fichier PHP, une image combinant Nginx et PHP a été utilisée. 
 Le port 80 a été exposé
 
-![alt text](images/dockerfile.png)
+![docker-file](images/dockerfile.png)
+
+### 2. Création du Volume
+Un volume nommé "game-results" a été créé pour assurer la persistance des données.
+Commande utilisée :
+```bash
+docker volume create game-results
+docker volume ls
