@@ -10,3 +10,10 @@ L'objectif de ce projet est de créer une image Docker et un volume pour héberg
 `results.json` : Le fichier de base de données (initialisé vide `[]`).
 `Dockerfile` : Le fichier de configuration pour construire l'image.
 
+## Étapes de Réalisation et Commandes
+
+### 1. Configuration du Dockerfile
+Pour respecter l'utilisation d'un serveur web tout en supportant l'exécution du fichier PHP, une image combinant Nginx et PHP a été utilisée. 
+Le port 80 a été exposé
+
+![alt text](images/dockerfile.png)
