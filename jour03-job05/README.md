@@ -40,3 +40,21 @@ L'image Docker a été construite avec la commande suivante:
 docker build -t tic-tac-toe-app .
 ````
 ![docker-buuild](images/docker-build.png)
+
+### 4. Lancement du Conteneur (Run)
+
+Le conteneur a été lancé en exposant le port 8080 et en liant le volume créé au répertoire de l'application.
+```bash
+docker run -d -p 8080:80 --name my-game -v game-results:/var/www/html tic-tac-toe-app
+```
+### 5. Vérification de la Persistance des Données
+
+Après avoir joué plusieurs parties , le contenu du fichier results.json a été vérifié depuis le terminal:
+```bash
+docker exec my-game cat /var/www/html/results.json
+```
+![result](images/result.png)
+
+### La présence des données a également été vérifiée via l'interface de Docker Desktop dans la section Volumes.
+
+![result-desktop](images/docker-desktop-volume.png)
