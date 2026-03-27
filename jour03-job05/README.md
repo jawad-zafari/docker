@@ -26,6 +26,7 @@ Un volume nommé "game-results" a été créé pour assurer la persistance des d
 Commande utilisée :
 ```bash
 docker volume create game-results
-docker volume ls
+docker volume ls 
 
+````
 ![docker-volume](images/docker-volume.png)
