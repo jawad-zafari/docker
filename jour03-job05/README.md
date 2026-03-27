@@ -27,3 +27,5 @@ Commande utilisée :
 ```bash
 docker volume create game-results
 docker volume ls
+
+![docker-volume](images/docker-volume.png)
