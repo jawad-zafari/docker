@@ -21,3 +21,13 @@ Création du fichier `docker-compose.yml` définissant les quatre services, le r
   ```
   ![docker-compose](images/docker-compose.png)
 
+  ### 3. Tests de Connectivité et Résultats
+
+  * A. Accès au Frontend (Nginx)
+Vérification de l'interface utilisateur et de la connexion API sur
+```bash
+ http://localhost:8080.
+ ```
+ ![frontend](images/frontend.png)
+ 
+
