@@ -1,4 +1,4 @@
-# Job 06 : Application Multi-conteneurs avec Docker Compose
+# Application Multi-conteneurs avec Docker Compose
 ## Description du Projet
 L'objectif de ce projet est de déployer une application web complète composée de quatre services distincts (Base de données, Backend, Frontend, et Interface d'administration) en utilisant Docker Compose. Les conteneurs communiquent entre eux via un réseau Docker dédié, et les données de la base de données sont persistées à l'aide d'un volume.
 ## Architecture des Services
@@ -40,6 +40,6 @@ Vérification de l'interface utilisateur et de la connexion API sur **http://loc
 docker exec -it jour04-job06-database-1 mysql -u root -p
 ```
 ```bash
-SHOW DATABASES;
+SHOW DATABASES
 ```
 ![BDD](images/database.png)
