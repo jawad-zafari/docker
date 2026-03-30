@@ -28,10 +28,18 @@ Vérification de l'interface utilisateur et de la connexion API sur **http://loc
  ![frontend](images/frontend.png)
 ### B. Accès au Backend (Node.js)
 * Vérification de la route de statut de l'API sur **http://localhost:3000/api/status.**
-![backend](images/backend.png)
 ![api-status](images/api-status.png)
-
+![backend](images/backend.png)
 ### C. Administration de la Base de Données (Adminer)
 * Connexion réussie à la base de données via l'interface Adminer sur **http://localhost:8081.**
 ![adminer-auth](images/adminer-authent.png) 
 ![adminer-panel](images/adminer.png)
+### D. Accès au Shell MySQL via le Terminal
+* Connexion directe au conteneur MySQL pour vérifier la présence de la base de données en ligne de commande :
+```bash 
+docker exec -it jour04-job06-database-1 mysql -u root -p
+```
+```bash
+SHOW DATABASES;
+```
+![BDD](images/database.png)
