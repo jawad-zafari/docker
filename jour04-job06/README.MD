@@ -24,12 +24,10 @@ Création du fichier `docker-compose.yml` définissant les quatre services, le r
 ### 3. Tests de Connectivité et Résultats
 
 * A. Accès au Frontend (Nginx)
-Vérification de l'interface utilisateur et de la connexion API sur
-```bash
- http://localhost:8080.
- ```
+Vérification de l'interface utilisateur et de la connexion API sur **http://localhost:8080.**
  ![frontend](images/frontend.png)
 ### B. Accès au Backend (Node.js)
 * Vérification de la route de statut de l'API sur **http://localhost:3000/api/status.**
-
+![backend](images/backend.png)
+![api-status](images/api-status.png)
 
