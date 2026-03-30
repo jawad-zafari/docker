@@ -31,3 +31,7 @@ Vérification de l'interface utilisateur et de la connexion API sur **http://loc
 ![backend](images/backend.png)
 ![api-status](images/api-status.png)
 
+### C. Administration de la Base de Données (Adminer)
+* Connexion réussie à la base de données via l'interface Adminer sur **http://localhost:8081.**
+![adminer-auth](images/adminer-authent.png) 
+![adminer-panel](images/adminer.png)
