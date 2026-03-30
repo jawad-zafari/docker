@@ -16,4 +16,5 @@ Création du fichier `docker-compose.yml` définissant les quatre services, le r
   ```bash
   docker-compose up -d --build
   ```
-  
+  ![docker-compose](images/docker-compose.png)
+
