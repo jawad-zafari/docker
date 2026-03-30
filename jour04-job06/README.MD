@@ -9,3 +9,11 @@ L'objectif de ce projet est de déployer une application web complète composée
 ## Étapes de Réalisation
 ### 1. Configuration de Docker Compose
 Création du fichier `docker-compose.yml` définissant les quatre services, le réseau interne (`app_network`), et le volume pour la persistance des données (`db_data`).
+### 2. Développement et Déploiement
+* Création du `Dockerfile` et du serveur Node.js (`server.js`) pour le backend.
+* Configuration du reverse proxy Nginx (`nginx.conf`) pour rediriger les requêtes API vers le backend.
+* Lancement de l'infrastructure complète avec la commande :
+  ```bash
+  docker-compose up -d --build
+  ```
+  
