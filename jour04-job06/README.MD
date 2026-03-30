@@ -6,3 +6,6 @@ L'objectif de ce projet est de déployer une application web complète composée
 * **backend** : Serveur Node.js communicant avec la base de données (Port 3000).
 * **nginx** : Serveur web Frontend basé sur Alpine (Port 8080).
 * **adminer** : Interface graphique de gestion de base de données (Port 8081).
+## Étapes de Réalisation
+### 1. Configuration de Docker Compose
+Création du fichier `docker-compose.yml` définissant les quatre services, le réseau interne (`app_network`), et le volume pour la persistance des données (`db_data`).
